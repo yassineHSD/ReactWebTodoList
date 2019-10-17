@@ -1,0 +1,145 @@
+html {
+background-color: hsl(204, 86%, 53%);
+}
+
+#animated-button{
+    height:40px !important;
+    height:40px !important;
+    width:40px;
+    border-left:0px solid black !important;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding:0;
+    font-weight: bold !important;
+}
+.add-task{
+  width:calc(100% - 50px) !important;
+  border:1px solid #ffffff !important;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  height:40px
+}
+.rotate {
+      transition: transform 0.5s;
+      height:100% !important;
+      width:100% !important;
+}
+.rotate:hover {
+      -ms-transform: skewY(180deg); /* IE 9 */
+      -webkit-transform: skewY(180deg); /* Safari 3-8 */
+      transform: skewY(180deg);
+}
+.panel{
+  width:calc(100% - 10px) !important;
+    left:0 !important;
+    border-radius:3px;
+}
+.level-item{
+  justify-content:left;
+}
+.panel-block{
+  color:hsl(0, 0%, 100%) !important;
+  border-radius:3px;
+  border:0px !important;
+  margin-top:1px;
+  }
+#item1{
+  background-color: hsl(204, 86%, 53%) !important;
+  transition: background-color 1.5s;
+}
+#item1:hover{
+  background-color: hsl(171, 100%, 41%) !important;
+}
+#item0{
+  background-color: hsl(217, 71%, 53%) !important;
+  transition: background-color 1.5s;
+}
+#item0:hover{
+  background-color: hsl(171, 100%, 41%) !important;
+}
+.item-div{
+  /*width:100%;
+  display:inline !important;*/
+}
+.delete-button{
+  padding:0;
+  height:40px;
+  width:40px;
+  font-weight: bold !important;
+  border-left:0px;
+  border-top-left-radius:0px;
+  border-bottom-left-radius:0px;
+
+}
+#delete-button{
+  max-width:40px;
+  position:absolute;
+  right:34px !important;
+  margin-right:0px;
+  border:0px;
+
+}
+#delete-button span{
+height:100%;
+width:100%;
+}
+.panel div.vanish{
+  transition:background-color 1.5s ;
+}
+.panel div.vanish button#delete-button{
+  position:absolute;
+  right:0px !important;
+}
+.panel div.vanish{
+  background-color:hsl(348, 100%, 61%) !important;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+.hidden{
+  display:none !important;
+}
+.deleteAlert{
+  display:inline;
+  border-radius: 3px !important;
+}
+
+.deleteAlert button{
+  margin:5px;
+  width:calc(50% - 10px);
+  border:0;
+  border-radius: 1px;
+
+}
+.deleteAlert button span{
+width:100%;
+hieght:100%;
+}
+.scale{
+  transition:transform 0.5s;
+}
+
+.scale:hover{
+  transform:scale(1.5);
+}
